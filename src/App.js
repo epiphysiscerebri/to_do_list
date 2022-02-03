@@ -2,10 +2,11 @@ import './App.css';
 import List from './components/List';
 
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
-      <List />
+      <List state= {props.state} />
     </div>
   );
 }

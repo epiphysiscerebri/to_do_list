@@ -1,11 +1,11 @@
 import classes from './Deal.module.css'
 
-function Deal () {
+function Deal (props) {
     return (
         <div className={classes.deal}>
-            <div className={classes.text}>text</div>
+            <div className={classes.text}>{props.text}</div>
             <input className={classes.checkbox} type='checkbox' />
-            <input className={classes.delete} type='checkbox' />
+            <button className={classes.delete} type='checkbox' />
         </div>
     )
 };
