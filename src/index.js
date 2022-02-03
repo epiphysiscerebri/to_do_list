@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from './state'
 
-let rendeTree = () => {
+let renderTree = () => {
   ReactDOM.render(
     <React.StrictMode>
       <App state= {state}/>
@@ -14,8 +14,8 @@ let rendeTree = () => {
   );
 }
 
-rendeTree(state)
-
+renderTree(state)
+export default renderTree;
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
