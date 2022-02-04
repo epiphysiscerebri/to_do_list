@@ -14,12 +14,17 @@ function List (props) {
         props.state.addDeal(text);
     }
 
+    let updateNewTextDeal = () => {
+        let text = newDealElement.current.value;
+        props.state.updateNewTextDeal(text); 
+    }
+
 
     return (
         <div className={classes.list}>
             <div>
             {dealElement}
-            <textarea className={classes.textArea} ref={newDealElement} value='asd'></textarea> 
+            <textarea className={classes.textArea} onChange={updateNewTextDeal} ref={newDealElement} value={props.state.newTextDeal}></textarea> 
             <button className={classes.button} onClick={addDeal}>Add deal</button>
             </div>
         </div>
