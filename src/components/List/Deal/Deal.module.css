@@ -1,0 +1,34 @@
+.deal {
+    background-color: yellow;
+    width: 50%;
+    padding: 10%;
+    margin: auto;
+    margin-top: 20px;
+    border: solid black;
+    border-radius: 10%;
+    display: grid;
+    grid-template-areas: 't c d';
+    grid-template-columns: 10fr 1fr 1fr;
+    grid-template-rows: 100%;
+
+}
+
+.text {
+    grid-area: t;
+    font-size: large;
+}
+
+.checkbox {
+    grid-area: c;
+    width: 20px;
+    height: 15px;
+}
+
+.delete {
+    grid-area: d;
+    width: 20px;
+    height: 20px;
+    background: url('../../../icons/imgonline-com-ua-Resize-tcIfAhzgXGR4EqT.png') center no-repeat;
+    border: none;
+    background-color: white;
+}

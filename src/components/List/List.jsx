@@ -1,5 +1,5 @@
 import classes from './List.module.css'
-import Deal from './Deal';
+import Deal from './Deal/Deal';
 import React from 'react';
 
 function List (props) {
