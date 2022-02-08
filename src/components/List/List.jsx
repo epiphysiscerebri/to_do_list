@@ -7,7 +7,7 @@ function List (props) {
     
     let newDealElement = React.createRef();
 
-    let dealElement = props.state.listComponent.map( deal => <Deal text= {deal.text} id= {deal.id} deleteDeal= {props.state.deleteDeal}/>)
+    let dealElement = props.state.listComponent.map( deal => <Deal text= {deal.text} id= {deal.id} deleteDeal= {props.state.deleteDeal} changeComplete= {props.changeComplete} state= {props.state} />)
 
     let addDeal = () => {
         let text = newDealElement.current.value;

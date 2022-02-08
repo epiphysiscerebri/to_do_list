@@ -2,14 +2,14 @@ import renderTree from "./index";
 
 let state = {
   listComponent: [
-    { text: "Сдалать уборку", id: 1  },
-    { text: "Выучить реакт", id: 2  },
-    { text: "Устроится на работу", id: 3 },
+    { text: "Сдалать уборку", id: Math.random().toString(36).substring(2,9), complete: false},
+    { text: "Выучить реакт", id: Math.random().toString(36).substring(2,9), complete: false },
+    { text: "Устроится на работу", id: Math.random().toString(36).substring(2,9), complete: false },
   ],
   newTextDeal: "",
   addDeal(newText) {
     if (newText) {
-      state.listComponent.push({ text: newText, id: state.listComponent.length + 1 });
+      state.listComponent.push({ text: newText, id: Math.random().toString(36).substring(2,9), complete: false });
       state.newTextDeal = "";
       console.log(state.listComponent)
       renderTree(state);
@@ -25,7 +25,8 @@ let state = {
     arr.splice(index, 1);
 
     renderTree(state) 
-  },
+  }
+
 };
 
 
