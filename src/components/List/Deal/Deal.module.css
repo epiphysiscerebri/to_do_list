@@ -1,5 +1,5 @@
 .deal {
-    background-color: yellow;
+    background-color: rgb(206, 197, 188);
     width: 50%;
     padding: 10%;
     margin: auto;
@@ -14,7 +14,7 @@
 }
 
 .active {
-    background-color: red;
+    background-color: rgb(193, 241, 193);
     width: 50%;
     padding: 10%;
     margin: auto;
@@ -25,11 +25,12 @@
     grid-template-areas: 't c d';
     grid-template-columns: 10fr 2fr 1fr;
     grid-template-rows: 100%;
+    text-decoration: 3px line-through;
 }
 
 .text {
     grid-area: t;
-    font-size: large;
+    font-size: 20px;
     max-width: 300px;
     min-width: 300px;
 }
